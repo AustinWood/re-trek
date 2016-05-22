@@ -18,6 +18,7 @@ class Settings: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     let series = ["The Original Series", "The Animated Series", "The Next Generation", "Deep Space Nine", "Voyager", "Enterprise"]
     var selectedSeries: [String] = []
+    var episodes = [String: AnyObject]()
     
     
     override func viewDidLoad() {
@@ -122,6 +123,40 @@ class Settings: UIViewController, UITableViewDataSource, UITableViewDelegate {
         }
         saveData()
         refreshData()
+    }
+    
+    
+    @IBAction func retrekPressed(sender: AnyObject) {
+        
+        if episodes.count == 0 {
+            createDictionaryfromJSON()
+        }
+        
+        let index: Int = Int(arc4random_uniform(UInt32(episodes.count)))
+        let randomEpisode = Array(episodes.values)[index]
+        print(randomEpisode)
+        
+    }
+    
+    func createDictionaryfromJSON() {
+        
+        let url = NSBundle.mainBundle().URLForResource("episodes", withExtension: "json")
+        let data = NSData(contentsOfURL: url!)
+        
+        do {
+            
+            let jsonResult = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers) as! NSDictionary
+            let jsonArray = jsonResult.valueForKey("episode") as! NSArray // "episode" is from root of JSON data
+            
+            for json in jsonArray {
+                let id = json["id"] as? String
+                episodes[id!] = json
+            }
+            
+        } catch {
+            fatalError("Error uploading data")
+        }
+        
     }
     
     

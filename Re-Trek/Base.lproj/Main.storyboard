@@ -221,6 +221,9 @@
                                 <state key="normal" title="Re-Trek">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="retrekPressed:" destination="wP6-eu-DuT" eventType="touchUpInside" id="JM9-yi-Yu8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2B-9Y-zJ7" customClass="RoundedButton" customModule="Re_Trek" customModuleProvider="target">
                                 <rect key="frame" x="104" y="77" width="120" height="45"/>
