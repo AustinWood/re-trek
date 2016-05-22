@@ -13,6 +13,7 @@ class Settings: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var seriesLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var selectAllButton: UIButton!
     
     
     let series = ["The Original Series", "The Animated Series", "The Next Generation", "Deep Space Nine", "Voyager", "Enterprise"]
@@ -37,6 +38,7 @@ class Settings: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     func refreshData() {
+        
         let defaults = NSUserDefaults.standardUserDefaults()
         if let savedSeries = defaults.arrayForKey("SelectedSeries") {
             selectedSeries = savedSeries as! [String]
@@ -44,7 +46,16 @@ class Settings: UIViewController, UITableViewDataSource, UITableViewDelegate {
             selectedSeries = ["The Original Series", "The Animated Series", "The Next Generation", "Deep Space Nine", "Voyager", "Enterprise"]
             saveData()
         }
+        
         seriesLabel.text = "Series: \(selectedSeries.count)/6"
+        
+        if selectedSeries.count == 6 {
+            selectAllButton.setTitle("Deselect All", forState: .Normal)
+        } else {
+            selectAllButton.setTitle("Select All", forState: .Normal)
+        }
+        
+        tableView.reloadData()
     }
     
     
@@ -94,6 +105,28 @@ class Settings: UIViewController, UITableViewDataSource, UITableViewDelegate {
         }
         
         tableView.reloadData()
+        saveData()
+        refreshData()
+    }
+    
+    
+    /////////////////
+    ///// OTHER /////
+    /////////////////
+    
+    @IBAction func selectAllPressed(sender: AnyObject) {
+        print("select all pressed")
+        if selectedSeries.count == 6 {
+            print("count == 6")
+            print(selectedSeries)
+            selectedSeries.removeAll()
+            print(selectedSeries)
+        } else {
+            print("count != 6")
+            print(selectedSeries)
+            selectedSeries = ["The Original Series", "The Animated Series", "The Next Generation", "Deep Space Nine", "Voyager", "Enterprise"]
+            print(selectedSeries)
+        }
         saveData()
         refreshData()
     }

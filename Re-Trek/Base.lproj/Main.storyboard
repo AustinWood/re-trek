@@ -199,16 +199,27 @@
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Series: 6/6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B8T-Ia-dqx">
-                                <rect key="frame" x="20" y="156" width="351" height="29"/>
+                                <rect key="frame" x="20" y="156" width="161" height="29"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
                                 <color key="textColor" red="0.9882352941176471" green="0.47450980392156861" blue="0.035294117647058823" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeh-1x-yC5">
+                                <rect key="frame" x="291" y="155" width="103" height="30"/>
+                                <color key="backgroundColor" red="0.15294117647058825" green="0.67843137254901964" blue="0.59215686274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Select All">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectAllPressed:" destination="wP6-eu-DuT" eventType="touchUpInside" id="OyR-Os-gRb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="selectAllButton" destination="eeh-1x-yC5" id="NKs-XS-4gJ"/>
                         <outlet property="seriesLabel" destination="B8T-Ia-dqx" id="Vtq-GX-131"/>
                         <outlet property="tableView" destination="Jff-lb-8IK" id="Qgs-Eu-YMo"/>
                     </connections>
