@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		42AB93DE1CF1BB04005BE167 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB93DD1CF1BB04005BE167 /* AppDelegate.swift */; };
-		42AB93E01CF1BB04005BE167 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB93DF1CF1BB04005BE167 /* ViewController.swift */; };
 		42AB93E31CF1BB04005BE167 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42AB93E11CF1BB04005BE167 /* Main.storyboard */; };
 		42AB93E61CF1BB04005BE167 /* Re_Trek.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42AB93E41CF1BB04005BE167 /* Re_Trek.xcdatamodeld */; };
 		42AB93E81CF1BB04005BE167 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42AB93E71CF1BB04005BE167 /* Assets.xcassets */; };
 		42AB93EB1CF1BB04005BE167 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42AB93E91CF1BB04005BE167 /* LaunchScreen.storyboard */; };
+		42AB93F31CF1BB5A005BE167 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB93F21CF1BB5A005BE167 /* HomeScreen.swift */; };
+		42AB93F51CF1BCD2005BE167 /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB93F41CF1BCD2005BE167 /* MainButton.swift */; };
+		42AB93F91CF1BDFC005BE167 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB93F81CF1BDFC005BE167 /* Colors.swift */; };
+		42AB93FC1CF1BE97005BE167 /* ButtonBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB93FB1CF1BE97005BE167 /* ButtonBorder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		42AB93DA1CF1BB04005BE167 /* Re-Trek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Re-Trek.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42AB93DD1CF1BB04005BE167 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		42AB93DF1CF1BB04005BE167 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		42AB93E21CF1BB04005BE167 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42AB93E51CF1BB04005BE167 /* Re_Trek.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Re_Trek.xcdatamodel; sourceTree = "<group>"; };
 		42AB93E71CF1BB04005BE167 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42AB93EA1CF1BB04005BE167 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42AB93EC1CF1BB04005BE167 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42AB93F21CF1BB5A005BE167 /* HomeScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		42AB93F41CF1BCD2005BE167 /* MainButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
+		42AB93F81CF1BDFC005BE167 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		42AB93FB1CF1BE97005BE167 /* ButtonBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonBorder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		42AB93DC1CF1BB04005BE167 /* Re-Trek */ = {
 			isa = PBXGroup;
 			children = (
-				42AB93DD1CF1BB04005BE167 /* AppDelegate.swift */,
-				42AB93DF1CF1BB04005BE167 /* ViewController.swift */,
 				42AB93E11CF1BB04005BE167 /* Main.storyboard */,
+				42AB93F71CF1BCEC005BE167 /* View controllers */,
+				42AB93F61CF1BCD6005BE167 /* Style subclasses */,
+				42AB93FA1CF1BDFF005BE167 /* Global */,
+				42AB93DD1CF1BB04005BE167 /* AppDelegate.swift */,
 				42AB93E71CF1BB04005BE167 /* Assets.xcassets */,
 				42AB93E91CF1BB04005BE167 /* LaunchScreen.storyboard */,
 				42AB93EC1CF1BB04005BE167 /* Info.plist */,
 				42AB93E41CF1BB04005BE167 /* Re_Trek.xcdatamodeld */,
 			);
 			path = "Re-Trek";
+			sourceTree = "<group>";
+		};
+		42AB93F61CF1BCD6005BE167 /* Style subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				42AB93F41CF1BCD2005BE167 /* MainButton.swift */,
+				42AB93FB1CF1BE97005BE167 /* ButtonBorder.swift */,
+			);
+			name = "Style subclasses";
+			sourceTree = "<group>";
+		};
+		42AB93F71CF1BCEC005BE167 /* View controllers */ = {
+			isa = PBXGroup;
+			children = (
+				42AB93F21CF1BB5A005BE167 /* HomeScreen.swift */,
+			);
+			name = "View controllers";
+			sourceTree = "<group>";
+		};
+		42AB93FA1CF1BDFF005BE167 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				42AB93F81CF1BDFC005BE167 /* Colors.swift */,
+			);
+			name = Global;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42AB93E01CF1BB04005BE167 /* ViewController.swift in Sources */,
+				42AB93F51CF1BCD2005BE167 /* MainButton.swift in Sources */,
+				42AB93FC1CF1BE97005BE167 /* ButtonBorder.swift in Sources */,
+				42AB93F91CF1BDFC005BE167 /* Colors.swift in Sources */,
 				42AB93E61CF1BB04005BE167 /* Re_Trek.xcdatamodeld in Sources */,
 				42AB93DE1CF1BB04005BE167 /* AppDelegate.swift in Sources */,
+				42AB93F31CF1BB5A005BE167 /* HomeScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
