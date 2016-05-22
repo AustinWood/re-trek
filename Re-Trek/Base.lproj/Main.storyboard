@@ -171,7 +171,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jff-lb-8IK">
-                                <rect key="frame" x="0.0" y="243" width="414" height="493"/>
+                                <rect key="frame" x="0.0" y="243" width="414" height="302"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="s25-jS-SL2" customClass="TableViewCell" customModule="Re_Trek" customModuleProvider="target">
@@ -199,6 +199,22 @@
                                     <outlet property="delegate" destination="wP6-eu-DuT" id="WyK-hb-wE4"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Series: 6/6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B8T-Ia-dqx">
+                                <rect key="frame" x="20" y="199" width="161" height="29"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" red="0.9882352941176471" green="0.47450980392156861" blue="0.035294117647058823" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeh-1x-yC5" customClass="RoundedButton" customModule="Re_Trek" customModuleProvider="target">
+                                <rect key="frame" x="280" y="198" width="103" height="30"/>
+                                <color key="backgroundColor" red="0.15294117647058825" green="0.67843137254901964" blue="0.59215686274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Select All">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectAllPressed:" destination="wP6-eu-DuT" eventType="touchUpInside" id="OyR-Os-gRb"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cfv-3p-dnd" customClass="RoundedButton" customModule="Re_Trek" customModuleProvider="target">
                                 <rect key="frame" x="263" y="87" width="120" height="45"/>
                                 <color key="backgroundColor" red="0.99215686270000003" green="0.5568627451" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -219,22 +235,16 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Series: 6/6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B8T-Ia-dqx">
-                                <rect key="frame" x="20" y="199" width="161" height="29"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tQa-4T-lww">
+                                <rect key="frame" x="20" y="564" width="51" height="31"/>
+                                <color key="onTintColor" red="0.98039215686274506" green="0.47450980392156861" blue="0.082352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time travel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NF4-ZV-kdF">
+                                <rect key="frame" x="84" y="565" width="161" height="29"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
-                                <color key="textColor" red="0.9882352941176471" green="0.47450980392156861" blue="0.035294117647058823" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.98823529409999999" green="0.47450980390000003" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeh-1x-yC5" customClass="RoundedButton" customModule="Re_Trek" customModuleProvider="target">
-                                <rect key="frame" x="280" y="198" width="103" height="30"/>
-                                <color key="backgroundColor" red="0.15294117647058825" green="0.67843137254901964" blue="0.59215686274509804" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Select All">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="selectAllPressed:" destination="wP6-eu-DuT" eventType="touchUpInside" id="OyR-Os-gRb"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -375,7 +385,7 @@
         <image name="space" width="1920" height="1080"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="CSZ-f5-7o5"/>
+        <segue reference="HC3-XU-XiZ"/>
         <segue reference="EyK-8Y-eHL"/>
     </inferredMetricsTieBreakers>
 </document>
