@@ -18,6 +18,7 @@
 		42AB93FC1CF1BE97005BE167 /* ButtonBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB93FB1CF1BE97005BE167 /* ButtonBorder.swift */; };
 		42AB93FE1CF1CDCB005BE167 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB93FD1CF1CDCB005BE167 /* Settings.swift */; };
 		42AB94001CF1CF10005BE167 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB93FF1CF1CF10005BE167 /* TableViewCell.swift */; };
+		42AB94021CF1DD07005BE167 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB94011CF1DD07005BE167 /* RoundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		42AB93FB1CF1BE97005BE167 /* ButtonBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonBorder.swift; sourceTree = "<group>"; };
 		42AB93FD1CF1CDCB005BE167 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		42AB93FF1CF1CF10005BE167 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		42AB94011CF1DD07005BE167 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				42AB93F41CF1BCD2005BE167 /* MainButton.swift */,
 				42AB93FB1CF1BE97005BE167 /* ButtonBorder.swift */,
 				42AB93FF1CF1CF10005BE167 /* TableViewCell.swift */,
+				42AB94011CF1DD07005BE167 /* RoundedButton.swift */,
 			);
 			name = "Style subclasses";
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				42AB94001CF1CF10005BE167 /* TableViewCell.swift in Sources */,
 				42AB93FC1CF1BE97005BE167 /* ButtonBorder.swift in Sources */,
 				42AB93F91CF1BDFC005BE167 /* Colors.swift in Sources */,
+				42AB94021CF1DD07005BE167 /* RoundedButton.swift in Sources */,
 				42AB93E61CF1BB04005BE167 /* Re_Trek.xcdatamodeld in Sources */,
 				42AB93FE1CF1CDCB005BE167 /* Settings.swift in Sources */,
 				42AB93DE1CF1BB04005BE167 /* AppDelegate.swift in Sources */,

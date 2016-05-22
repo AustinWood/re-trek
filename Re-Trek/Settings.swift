@@ -115,17 +115,10 @@ class Settings: UIViewController, UITableViewDataSource, UITableViewDelegate {
     /////////////////
     
     @IBAction func selectAllPressed(sender: AnyObject) {
-        print("select all pressed")
         if selectedSeries.count == 6 {
-            print("count == 6")
-            print(selectedSeries)
             selectedSeries.removeAll()
-            print(selectedSeries)
         } else {
-            print("count != 6")
-            print(selectedSeries)
             selectedSeries = ["The Original Series", "The Animated Series", "The Next Generation", "Deep Space Nine", "Voyager", "Enterprise"]
-            print(selectedSeries)
         }
         saveData()
         refreshData()
