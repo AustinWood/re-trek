@@ -306,6 +306,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4g-Gf-pja">
                                 <rect key="frame" x="32" y="539" width="80" height="80"/>
                                 <state key="normal" image="favorites"/>
+                                <connections>
+                                    <segue destination="g7z-6c-DeJ" kind="show" id="Vv2-JW-WfV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJh-Hc-xUS" customClass="RoundedButton" customModule="Re_Trek" customModuleProvider="target">
                                 <rect key="frame" x="129" y="539" width="253" height="80"/>
@@ -314,6 +317,9 @@
                                 <state key="normal" title="Mark as Watched">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="g7z-6c-DeJ" kind="show" id="EUK-R7-bmb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fH9-LX-QyT" customClass="RoundedButton" customModule="Re_Trek" customModuleProvider="target">
                                 <rect key="frame" x="129" y="635" width="253" height="80"/>
@@ -322,6 +328,9 @@
                                 <state key="normal" title="Skip and Re-Trek">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="skipPressed:" destination="7fT-oj-exQ" eventType="touchUpInside" id="wsu-mq-roX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsO-ge-jat">
                                 <rect key="frame" x="32" y="635" width="80" height="80"/>

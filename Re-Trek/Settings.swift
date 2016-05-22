@@ -127,7 +127,7 @@ class Settings: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBAction func retrekPressed(sender: AnyObject) {
         
-        selectEpisode()
+        //selectEpisode()
         
 
     }

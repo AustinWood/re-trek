@@ -28,6 +28,11 @@ class EpisodeScreen: UIViewController {
     }
     
     
+    override func viewWillAppear(animated: Bool) {
+        selectEpisode()
+    }
+    
+    
     
     func displayDetails(notif: NSNotification) {
         
@@ -72,6 +77,12 @@ class EpisodeScreen: UIViewController {
             fatalError("Error uploading data")
         }
     }
+    
+    
+    @IBAction func skipPressed(sender: AnyObject) {
+        selectEpisode()
+    }
+    
     
     
 }
