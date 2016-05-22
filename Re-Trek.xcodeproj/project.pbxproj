@@ -22,6 +22,7 @@
 		42AB94041CF1DF10005BE167 /* episodes.json in Resources */ = {isa = PBXBuildFile; fileRef = 42AB94031CF1DF10005BE167 /* episodes.json */; };
 		42AB94061CF1F80F005BE167 /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB94051CF1F80F005BE167 /* RoundedImage.swift */; };
 		42AB94081CF1F87E005BE167 /* EpisodeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB94071CF1F87E005BE167 /* EpisodeScreen.swift */; };
+		42AB940A1CF21F47005BE167 /* SelectEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB94091CF21F47005BE167 /* SelectEpisode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		42AB94031CF1DF10005BE167 /* episodes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = episodes.json; sourceTree = "<group>"; };
 		42AB94051CF1F80F005BE167 /* RoundedImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
 		42AB94071CF1F87E005BE167 /* EpisodeScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeScreen.swift; sourceTree = "<group>"; };
+		42AB94091CF21F47005BE167 /* SelectEpisode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectEpisode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			children = (
 				42AB93F81CF1BDFC005BE167 /* Colors.swift */,
 				42AB94031CF1DF10005BE167 /* episodes.json */,
+				42AB94091CF21F47005BE167 /* SelectEpisode.swift */,
 			);
 			name = Global;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				42AB93DE1CF1BB04005BE167 /* AppDelegate.swift in Sources */,
 				42AB93F31CF1BB5A005BE167 /* HomeScreen.swift in Sources */,
 				42AB94081CF1F87E005BE167 /* EpisodeScreen.swift in Sources */,
+				42AB940A1CF21F47005BE167 /* SelectEpisode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
