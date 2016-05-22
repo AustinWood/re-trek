@@ -128,9 +128,8 @@ class Settings: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBAction func retrekPressed(sender: AnyObject) {
         
-        if episodes.count == 0 {
-            createDictionaryfromJSON()
-        }
+        episodes.removeAll()
+        createDictionaryfromJSON()
         
         let index: Int = Int(arc4random_uniform(UInt32(episodes.count)))
         let randomEpisode = Array(episodes.values)[index]
@@ -149,8 +148,11 @@ class Settings: UIViewController, UITableViewDataSource, UITableViewDelegate {
             let jsonArray = jsonResult.valueForKey("episode") as! NSArray // "episode" is from root of JSON data
             
             for json in jsonArray {
-                let id = json["id"] as? String
-                episodes[id!] = json
+                let series = json["series"] as? String
+                if selectedSeries.contains(series!) {
+                    let id = json["id"] as? String
+                    episodes[id!] = json
+                }
             }
             
         } catch {
