@@ -16,6 +16,8 @@
 		42AB93F51CF1BCD2005BE167 /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB93F41CF1BCD2005BE167 /* MainButton.swift */; };
 		42AB93F91CF1BDFC005BE167 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB93F81CF1BDFC005BE167 /* Colors.swift */; };
 		42AB93FC1CF1BE97005BE167 /* ButtonBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB93FB1CF1BE97005BE167 /* ButtonBorder.swift */; };
+		42AB93FE1CF1CDCB005BE167 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB93FD1CF1CDCB005BE167 /* Settings.swift */; };
+		42AB94001CF1CF10005BE167 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB93FF1CF1CF10005BE167 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		42AB93F41CF1BCD2005BE167 /* MainButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
 		42AB93F81CF1BDFC005BE167 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		42AB93FB1CF1BE97005BE167 /* ButtonBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonBorder.swift; sourceTree = "<group>"; };
+		42AB93FD1CF1CDCB005BE167 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		42AB93FF1CF1CF10005BE167 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 			children = (
 				42AB93F41CF1BCD2005BE167 /* MainButton.swift */,
 				42AB93FB1CF1BE97005BE167 /* ButtonBorder.swift */,
+				42AB93FF1CF1CF10005BE167 /* TableViewCell.swift */,
 			);
 			name = "Style subclasses";
 			sourceTree = "<group>";
@@ -88,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				42AB93F21CF1BB5A005BE167 /* HomeScreen.swift */,
+				42AB93FD1CF1CDCB005BE167 /* Settings.swift */,
 			);
 			name = "View controllers";
 			sourceTree = "<group>";
@@ -172,9 +178,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				42AB93F51CF1BCD2005BE167 /* MainButton.swift in Sources */,
+				42AB94001CF1CF10005BE167 /* TableViewCell.swift in Sources */,
 				42AB93FC1CF1BE97005BE167 /* ButtonBorder.swift in Sources */,
 				42AB93F91CF1BDFC005BE167 /* Colors.swift in Sources */,
 				42AB93E61CF1BB04005BE167 /* Re_Trek.xcdatamodeld in Sources */,
+				42AB93FE1CF1CDCB005BE167 /* Settings.swift in Sources */,
 				42AB93DE1CF1BB04005BE167 /* AppDelegate.swift in Sources */,
 				42AB93F31CF1BB5A005BE167 /* HomeScreen.swift in Sources */,
 			);

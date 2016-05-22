@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="re-trek" translatesAutoresizingMaskIntoConstraints="NO" id="PRo-gk-jfY">
-                                <rect key="frame" x="31" y="46" width="352" height="128"/>
+                                <rect key="frame" x="31" y="50" width="352" height="128"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Acl-Io-Iou" userLabel="Button border" customClass="ButtonBorder" customModule="Re_Trek" customModuleProvider="target">
                                 <rect key="frame" x="47" y="241" width="320" height="320"/>
@@ -30,6 +30,33 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZZ-Wx-B4m" userLabel="Main button" customClass="MainButton" customModule="Re_Trek" customModuleProvider="target">
                                 <rect key="frame" x="57" y="251" width="300" height="300"/>
                                 <color key="backgroundColor" red="0.16470588235294117" green="0.72549019607843135" blue="0.6588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="7fT-oj-exQ" kind="show" id="RVR-Ld-IcX"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="7da-5F-AOv">
+                                <rect key="frame" x="79" y="256" width="270" height="270"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ck-F2-fX3">
+                                <rect key="frame" x="31" y="666" width="50" height="50"/>
+                                <state key="normal" image="info"/>
+                                <connections>
+                                    <segue destination="2P5-bY-m2I" kind="show" id="VN0-fW-tb5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7wH-SH-GmE">
+                                <rect key="frame" x="333" y="666" width="50" height="50"/>
+                                <state key="normal" image="settings"/>
+                                <connections>
+                                    <segue destination="wP6-eu-DuT" kind="show" id="ZR4-A8-Oj9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLx-UK-usO">
+                                <rect key="frame" x="182" y="666" width="50" height="50"/>
+                                <state key="normal" image="favorites"/>
+                                <connections>
+                                    <segue destination="ww4-8C-lYQ" kind="show" id="eWj-wF-s3Q"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -40,9 +67,204 @@
             </objects>
             <point key="canvasLocation" x="494" y="452"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Ppb-Zn-oZR">
+            <objects>
+                <viewController id="2P5-bY-m2I" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zZr-63-95R"/>
+                        <viewControllerLayoutGuide type="bottom" id="baz-Iw-RsB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mOV-bi-tot">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="space" translatesAutoresizingMaskIntoConstraints="NO" id="Ufn-9d-H8X">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1q7-4M-ZYl">
+                                <rect key="frame" x="108" y="300" width="198" height="135"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="56"/>
+                                <color key="textColor" red="1" green="0.55686274509803924" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9a-gp-PX4">
+                                <rect key="frame" x="20" y="20" width="50" height="50"/>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <segue destination="g7z-6c-DeJ" kind="show" id="tXg-7l-2OY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O6h-OV-5Wl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79" y="1330"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tRR-cP-JKF">
+            <objects>
+                <viewController id="ww4-8C-lYQ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Es-6K-zZb"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q4u-wf-tAS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qQs-oa-97I">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="space" translatesAutoresizingMaskIntoConstraints="NO" id="4UK-wY-X6d">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbW-wc-cTr">
+                                <rect key="frame" x="20" y="20" width="50" height="50"/>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <segue destination="g7z-6c-DeJ" kind="show" id="aPH-sN-YjN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Favorites" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXE-Ee-uEI">
+                                <rect key="frame" x="84" y="300" width="247" height="135"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="56"/>
+                                <color key="textColor" red="1" green="0.5568627451" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KGf-0V-4Di" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="494" y="1330"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="0dh-PM-cGd">
+            <objects>
+                <viewController id="wP6-eu-DuT" customClass="Settings" customModule="Re_Trek" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dcf-2K-Ff3"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZgO-Ks-UPV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JBP-U3-wc4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="space" translatesAutoresizingMaskIntoConstraints="NO" id="xz8-wZ-DcK">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4k-jC-l10">
+                                <rect key="frame" x="20" y="20" width="50" height="50"/>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <segue destination="g7z-6c-DeJ" kind="show" id="HC3-XU-XiZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbY-uz-2DE">
+                                <rect key="frame" x="97" y="16" width="220" height="58"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="36"/>
+                                <color key="textColor" red="1" green="0.5568627451" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jff-lb-8IK">
+                                <rect key="frame" x="0.0" y="193" width="414" height="543"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="s25-jS-SL2" customClass="TableViewCell" customModule="Re_Trek" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s25-jS-SL2" id="8ok-Dd-Ru0">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Series name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmx-q5-259">
+                                                    <rect key="frame" x="20" y="11" width="316" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="label" destination="jmx-q5-259" id="awc-9V-n26"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="wP6-eu-DuT" id="DT2-tf-zR2"/>
+                                    <outlet property="delegate" destination="wP6-eu-DuT" id="WyK-hb-wE4"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Series: 6/6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B8T-Ia-dqx">
+                                <rect key="frame" x="20" y="156" width="351" height="29"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" red="0.9882352941176471" green="0.47450980392156861" blue="0.035294117647058823" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="seriesLabel" destination="B8T-Ia-dqx" id="Vtq-GX-131"/>
+                        <outlet property="tableView" destination="Jff-lb-8IK" id="Qgs-Eu-YMo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SPz-2H-cgd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1108" y="1076"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jNd-kH-qqX">
+            <objects>
+                <viewController id="7fT-oj-exQ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XLb-bB-ijK"/>
+                        <viewControllerLayoutGuide type="bottom" id="R2p-qv-jX2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ULK-6l-UEa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="space" translatesAutoresizingMaskIntoConstraints="NO" id="1MA-Vv-y1d">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Episode Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BMc-gO-EfT">
+                                <rect key="frame" x="-2" y="300" width="418" height="135"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="42"/>
+                                <color key="textColor" red="1" green="0.5568627451" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsO-ge-jat">
+                                <rect key="frame" x="20" y="20" width="50" height="50"/>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <segue destination="g7z-6c-DeJ" kind="show" id="CSZ-f5-7o5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9pm-8v-GQx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1108" y="230"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="back" width="512" height="512"/>
+        <image name="favorites" width="512" height="512"/>
+        <image name="info" width="640" height="640"/>
+        <image name="logo" width="774" height="774"/>
         <image name="re-trek" width="1358" height="466"/>
+        <image name="settings" width="2000" height="2000"/>
         <image name="space" width="1920" height="1080"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="HC3-XU-XiZ"/>
+    </inferredMetricsTieBreakers>
 </document>

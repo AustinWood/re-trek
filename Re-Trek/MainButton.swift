@@ -29,24 +29,23 @@ class MainButton: UIButton {
     
     
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        
-        if self.state == .Highlighted {
-            self.highlighted = false
-        }
-        
-        self.alpha = 1.0
-        NSNotificationCenter.defaultCenter().postNotificationName("flagDown", object: nil)
-        
-    }
-    
-    
-    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        
-        self.alpha = 0.6
-        NSNotificationCenter.defaultCenter().postNotificationName("flagUp", object: nil)
-        
-    }
+//    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+//    
+//        if self.state == .Highlighted {
+//            self.highlighted = false
+//        }
+//        
+//        self.alpha = 1.0
+//        NSNotificationCenter.defaultCenter().postNotificationName("flagDown", object: nil)
+//        
+//    }
+//    
+//    
+//    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+//        
+//        self.alpha = 0.6
+//        NSNotificationCenter.defaultCenter().postNotificationName("flagUp", object: nil)
+//    }
     
     
     
