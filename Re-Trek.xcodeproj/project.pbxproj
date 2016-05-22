@@ -20,6 +20,8 @@
 		42AB94001CF1CF10005BE167 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB93FF1CF1CF10005BE167 /* TableViewCell.swift */; };
 		42AB94021CF1DD07005BE167 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB94011CF1DD07005BE167 /* RoundedButton.swift */; };
 		42AB94041CF1DF10005BE167 /* episodes.json in Resources */ = {isa = PBXBuildFile; fileRef = 42AB94031CF1DF10005BE167 /* episodes.json */; };
+		42AB94061CF1F80F005BE167 /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB94051CF1F80F005BE167 /* RoundedImage.swift */; };
+		42AB94081CF1F87E005BE167 /* EpisodeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB94071CF1F87E005BE167 /* EpisodeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		42AB93FF1CF1CF10005BE167 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		42AB94011CF1DD07005BE167 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		42AB94031CF1DF10005BE167 /* episodes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = episodes.json; sourceTree = "<group>"; };
+		42AB94051CF1F80F005BE167 /* RoundedImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
+		42AB94071CF1F87E005BE167 /* EpisodeScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,7 @@
 				42AB93FB1CF1BE97005BE167 /* ButtonBorder.swift */,
 				42AB93FF1CF1CF10005BE167 /* TableViewCell.swift */,
 				42AB94011CF1DD07005BE167 /* RoundedButton.swift */,
+				42AB94051CF1F80F005BE167 /* RoundedImage.swift */,
 			);
 			name = "Style subclasses";
 			sourceTree = "<group>";
@@ -99,6 +104,7 @@
 			children = (
 				42AB93F21CF1BB5A005BE167 /* HomeScreen.swift */,
 				42AB93FD1CF1CDCB005BE167 /* Settings.swift */,
+				42AB94071CF1F87E005BE167 /* EpisodeScreen.swift */,
 			);
 			name = "View controllers";
 			sourceTree = "<group>";
@@ -191,8 +197,10 @@
 				42AB94021CF1DD07005BE167 /* RoundedButton.swift in Sources */,
 				42AB93E61CF1BB04005BE167 /* Re_Trek.xcdatamodeld in Sources */,
 				42AB93FE1CF1CDCB005BE167 /* Settings.swift in Sources */,
+				42AB94061CF1F80F005BE167 /* RoundedImage.swift in Sources */,
 				42AB93DE1CF1BB04005BE167 /* AppDelegate.swift in Sources */,
 				42AB93F31CF1BB5A005BE167 /* HomeScreen.swift in Sources */,
+				42AB94081CF1F87E005BE167 /* EpisodeScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

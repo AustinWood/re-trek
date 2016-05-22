@@ -75,9 +75,9 @@ class Settings: UIViewController, UITableViewDataSource, UITableViewDelegate {
         cell.label.text = seriesName
         
         if selectedSeries.contains("\(seriesName)") {
-            cell.backgroundColor = COLOR_GREEN.colorWithAlphaComponent(0.6)
+            cell.backgroundColor = COLOR_GREEN
         } else {
-            cell.backgroundColor = COLOR_RED.colorWithAlphaComponent(0.6)
+            cell.backgroundColor = COLOR_RED
         }
         
         return cell
@@ -133,7 +133,16 @@ class Settings: UIViewController, UITableViewDataSource, UITableViewDelegate {
         
         let index: Int = Int(arc4random_uniform(UInt32(episodes.count)))
         let randomEpisode = Array(episodes.values)[index]
+        let randomID = randomEpisode["id"]
+        
+        print("next line is random episode detail from Settings VC")
         print(randomEpisode)
+        print("next line is random episode ID from Settings VC")
+        print(randomID)
+        
+        
+        NSNotificationCenter.defaultCenter().postNotificationName("passEpisode", object: nil, userInfo: ["episodeID" : randomID!!])
+        
         
     }
     
