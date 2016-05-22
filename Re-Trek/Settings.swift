@@ -14,6 +14,7 @@ class Settings: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var seriesLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var selectAllButton: UIButton!
+    @IBOutlet weak var timeTravelSwitch: UISwitch!
     
     
     let series = ["The Original Series", "The Animated Series", "The Next Generation", "Deep Space Nine", "Voyager", "Enterprise"]
@@ -22,24 +23,40 @@ class Settings: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        refreshData()
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "updateLabel:", name: "episodeCount", object: nil)
     }
     
+    override func viewWillAppear(animated: Bool) {
+        refreshData()
+    }
     
     
     /////////////////
     ///// DATA //////
     /////////////////
     
+    func updateLabel(notif: NSNotification) {
+        print(notif.userInfo!["episodeCount"]!)
+    }
+    
     func saveData() {
         let defaults = NSUserDefaults.standardUserDefaults()
         defaults.setObject(selectedSeries, forKey: "SelectedSeries")
-        
     }
     
     func refreshData() {
         
         let defaults = NSUserDefaults.standardUserDefaults()
+        
+        
+        if let timeTravel = defaults.boolForKey("TimeTravel") as Bool! {
+            if timeTravel {
+                timeTravelSwitch.on = true
+            } else {
+                timeTravelSwitch.on = false
+            }
+        }
+        
         if let savedSeries = defaults.arrayForKey("SelectedSeries") {
             selectedSeries = savedSeries as! [String]
         } else {
@@ -107,6 +124,7 @@ class Settings: UIViewController, UITableViewDataSource, UITableViewDelegate {
         tableView.reloadData()
         saveData()
         refreshData()
+        selectEpisode()
     }
     
     
@@ -133,6 +151,13 @@ class Settings: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
 
+    @IBAction func switchChanged(sender: AnyObject) {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let timeTravel = timeTravelSwitch.on
+        print(timeTravel)
+        defaults.setBool(timeTravel, forKey: "TimeTravel")
+        selectEpisode()
+    }
     
     
 }

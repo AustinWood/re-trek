@@ -238,6 +238,9 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tQa-4T-lww">
                                 <rect key="frame" x="20" y="564" width="51" height="31"/>
                                 <color key="onTintColor" red="0.98039215686274506" green="0.47450980392156861" blue="0.082352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="switchChanged:" destination="wP6-eu-DuT" eventType="valueChanged" id="PYG-Vp-WBK"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time travel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NF4-ZV-kdF">
                                 <rect key="frame" x="84" y="565" width="161" height="29"/>
@@ -253,6 +256,7 @@
                         <outlet property="selectAllButton" destination="eeh-1x-yC5" id="NKs-XS-4gJ"/>
                         <outlet property="seriesLabel" destination="B8T-Ia-dqx" id="Vtq-GX-131"/>
                         <outlet property="tableView" destination="Jff-lb-8IK" id="Qgs-Eu-YMo"/>
+                        <outlet property="timeTravelSwitch" destination="tQa-4T-lww" id="THs-mO-H8W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SPz-2H-cgd" userLabel="First Responder" sceneMemberID="firstResponder"/>

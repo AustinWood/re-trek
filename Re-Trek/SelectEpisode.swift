@@ -21,12 +21,7 @@ func selectEpisode() {
     let randomEpisode = Array(episodes.values)[index]
     let randomID = randomEpisode["id"]
     
-    print("next line is random episode detail from Settings VC")
-    print(randomEpisode)
-    print("next line is random episode ID from Settings VC")
-    print(randomID)
-    
-    
+    NSNotificationCenter.defaultCenter().postNotificationName("episodeCount", object: nil, userInfo: ["episodeCount" : episodes.count])
     NSNotificationCenter.defaultCenter().postNotificationName("passEpisode", object: nil, userInfo: ["episodeID" : randomID!!])
     
     
@@ -57,8 +52,24 @@ func createDictionaryfromJSON() {
         for json in jsonArray {
             let series = json["series"] as? String
             if selectedSeries.contains(series!) {
-                let id = json["id"] as? String
-                episodes[id!] = json
+                
+                if let timeTravel = defaults.boolForKey("TimeTravel") as Bool! {
+                    if timeTravel {
+                        if json["timeTravel"] as? String == "yes" {
+                            let id = json["id"] as? String
+                            episodes[id!] = json
+                        }
+                    } else {
+                        let id = json["id"] as? String
+                        episodes[id!] = json
+                    }
+                } else {
+                    let id = json["id"] as? String
+                    episodes[id!] = json
+                }
+                
+                
+
             }
         }
         
